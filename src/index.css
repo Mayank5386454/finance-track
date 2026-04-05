@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #0f0f11;
+    color: #f0f0f2;
+    font-family: "DM Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #17171a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2e2e35;
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-card border border-white/[0.07] rounded-2xl;
+  }
+  .btn-primary {
+    @apply bg-accent text-bg font-bold text-sm px-4 py-2 rounded-xl hover:opacity-85 transition-opacity cursor-pointer;
+  }
+  .btn-ghost {
+    @apply bg-bg3 border border-white/[0.07] text-muted text-sm px-4 py-2 rounded-xl hover:text-white transition-colors cursor-pointer;
+  }
+  .input {
+    @apply w-full bg-bg3 border border-white/[0.07] rounded-xl px-3 py-2.5 text-white text-sm font-sans outline-none focus:border-accent/40 transition-colors;
+  }
+  .label {
+    @apply block text-[10px] font-semibold uppercase tracking-widest text-muted mb-1.5;
+  }
+  .section-title {
+    @apply font-display text-2xl text-white;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1 text-[11px] font-semibold px-2.5 py-1 rounded-full;
+  }
+  .nav-item {
+    @apply flex items-center gap-3 px-6 py-3 text-muted text-sm font-medium border-l-[3px] border-transparent cursor-pointer hover:text-white hover:bg-white/[0.03] transition-all;
+  }
+  .nav-item-active {
+    @apply text-accent bg-accent/[0.07] border-l-accent;
+  }
+  .tx-row {
+    @apply border-b border-white/[0.04] last:border-0 hover:bg-white/[0.02] transition-colors;
+  }
+}
