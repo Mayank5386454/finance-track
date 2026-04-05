@@ -10,7 +10,7 @@ export default function Topbar() {
       <div className="flex items-center justify-between mb-1">
         <div>
           <h1 className="font-display text-2xl text-white">
-            Good morning, <span className="text-accent">Alex 👋</span>
+            Good morning, <span className="text-accent">John</span>
           </h1>
           <p className="text-xs text-muted mt-1">{todayFull()}</p>
         </div>
