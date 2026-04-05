@@ -13,7 +13,6 @@ import {
 } from "chart.js";
 import { Line, Bar, Doughnut } from "react-chartjs-2";
 import { useSummary } from "../hooks/useSummary";
-import { fmt } from "../utils/helpers";
 
 ChartJS.register(
   CategoryScale, LinearScale, PointElement, LineElement,
